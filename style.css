@@ -1,0 +1,340 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    line-height: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border-collapse: inherit
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #fff;
+    background: #22333d
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0
+}
+
+.Content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+@media (max-height: 600px),
+screen and (max-width:767px) {
+    .Container {
+        height: auto
+    }
+
+    .Container,
+    .Content {
+        position: relative
+    }
+}
+
+
+.gg {
+    display: flex;
+    height: 14px;
+    margin-bottom: 11px
+}
+
+.gg-last {
+    margin-bottom: 0
+}
+
+.gg--indent {
+    margin-left: 42px
+}
+
+.gg-symbol {
+    height: 14px;
+    width: 14px;
+    background: #969696;
+    margin-right: 14px
+}
+
+.gg-symbol--disc {
+    border-radius: 14px
+}
+
+.gg-symbol--rect {
+    transform-origin: 0 0
+}
+
+.gg-symbol--1 {
+    width: 28px
+}
+
+.gg-symbol--2 {
+    width: 56px
+}
+
+.gg-symbol--3 {
+    width: 84px
+}
+
+.gg-symbol--4 {
+    width: 112px
+}
+
+.gg-symbol--5 {
+    width: 140px
+}
+
+.gg-symbol--6 {
+    width: 168px
+}
+
+.gg-symbol--7 {
+    width: 196px
+}
+
+.gg-symbol--8 {
+    width: 224px
+}
+
+.gg-symbol--9 {
+    width: 252px
+}
+
+.gg-symbol--10 {
+    width: 280px
+}
+
+.gg-symbol--11 {
+    width: 308px
+}
+
+@media screen and (max-width: 1024px) {
+    .gg {
+        height: 10.5px;
+        margin-bottom: 7px
+    }
+
+    .gg-last {
+        margin-bottom: 0
+    }
+
+    .gg--indent {
+        margin-left: 42px
+    }
+
+    .gg-symbol {
+        height: 10.5px;
+        width: 10.5px;
+        margin-right: 10.5px
+    }
+
+    .gg-symbol--rect {
+        transform-origin: 0 0
+    }
+
+    .gg-symbol--1 {
+        width: 21px
+    }
+
+    .gg-symbol--2 {
+        width: 42px
+    }
+
+    .gg-symbol--3 {
+        width: 63px
+    }
+
+    .gg-symbol--4 {
+        width: 84px
+    }
+
+    .gg-symbol--5 {
+        width: 105px
+    }
+
+    .gg-symbol--6 {
+        width: 126px
+    }
+
+    .gg-symbol--7 {
+        width: 147px
+    }
+
+    .gg-symbol--8 {
+        width: 168px
+    }
+
+    .gg-symbol--9 {
+        width: 189px
+    }
+
+    .gg-symbol--10 {
+        width: 210px
+    }
+
+    .gg-symbol--11 {
+        width: 231px
+    }
+}
+
+.Arrow {
+    position: absolute;
+    left: -50px;
+    width: 1px;
+    background: #384750;
+    top: 0;
+    height: calc(100% - 8px);
+    transform-origin: 0 0
+}
+
+.Arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #384750;
+    bottom: -9px;
+    left: -8px
+}
+
+.Arrow--reversed:after {
+    content: 0;
+    display: none
+}
+
+@media screen and (max-width: 1024px) {
+    .Arrow {
+        left: -25px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Arrow {
+        display: none
+    }
+}
+
+.Title h1,
+.Title h2 {
+    font-weight: 600
+}
+
+.Title h1 {
+    font-size: 64px;
+    margin-bottom: 5px
+}
+
+.Title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0 30px 42px
+}
+
+div.Links a {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+.Links a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 3px;
+    margin-right: 30px;
+}
+
+.Links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, #6491D6, #43F0C7);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.Links a:nth-child(1)::after {
+    background-image: linear-gradient(to right, #FFDA7A, #FF6969);
+}
+
+.Links a:nth-child(2)::after {
+    background-image: linear-gradient(to right, #F29FFF, #7C99FF);
+}
+
+.Links a:nth-child(3)::after {
+    background-image: linear-gradient(to right, #6491D6, #43F0C7);
+}
+
+.Links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media screen and (max-width: 1024px) {
+    .Title h1 {
+        font-size: 48px
+    }
+
+    .Title h2 {
+        font-size: 18px;
+        left: 6.75px
+    }
+}
+
+
+.Home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden
+}
+
+.Home-content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%)
+}
+
+.Home .Title {
+    margin: 30px 0 0 42px
+}
+
+@media screen and (max-width: 1024px) {
+    .Home-content {
+        left: 50px
+    }
+
+    .Home .Title {
+        margin: 30px 0 0 42px
+    }
+}
