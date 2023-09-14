@@ -338,11 +338,23 @@ div.Links a {
         display:none;
     }
     
-  .Home-content {
-    left: 7.5px;
-  }
+    .Home-content {
+        left: 7.5px;
+    }
   
-  .Home .Title, div.Links, .gg {
-     margin-left: 0;
-  }
+    .Home .Title, div.Links, .gg {
+        margin-left: 0;
+    }
+
+    .Title h1 {
+        font-size: 32px;
+    }
+    
+    .Title h2 {
+        font-size: 18px;
+    }
+
+    div.Links a {
+        font-size: 16px;
+    }
 }
